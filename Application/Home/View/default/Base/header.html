@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{$webtitle}-{$site.name}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="keywords" content="{$site.keyword},{$info['keywords']}" />
+<meta name="description" content="{$site.description},{$info['description']}" />
+<meta name="author" content="fcdcyy@sina.cn" />
+<link type="text/css" href="__CSS__/base.css" rel="stylesheet" />
+<link type="text/css" href="__CSS__/index.css" rel="stylesheet" />
+<link type="text/css" href="__CSS__/main.css" rel="stylesheet" />
+<script type="text/javascript" src="__JS__/jquery.js"></script>
+<script type="text/javascript" src="__JS__/jquery.flexslider.min.js"></script>
+<script type="text/javascript" src="__JS__/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="__JS__/index.js"></script>
+</head>
+
+<body>
+    <!--header开始-->
+    <div id="header" class="clearfix">
+        <!--logo开始-->
+        <div class="logo fl">
+            <div class="logo_t clearfix pr">
+                <img src="__IMG__/logo.png" alt="" />
+               <!--  <a href="#" title=""></a> -->
+                <ul class="city_ul pa">
+                    <li class="city_active"><a href="#" title="">[上海]</a></li>
+                    <li><a href="#" title="">杭州</a></li>
+                    <li><a href="#" title="">成都</a></li>
+                    <li><a href="#" title="">广州</a></li>
+                </ul>
+            </div>
+            <div class="logo_b">
+                CCTV财经战略合作伙伴<br />
+                让中国制造成为世界品牌
+            </div>
+        </div>
+        <!--logo结束-->
+        <div class="header_r fr">
+            <div class="tel">
+
+                <a href="#" title=""></a>
+                <a href="#" title=""></a>
+                <a href="#" title=""></a>
+                <b class="fr">免费热线电话：{$site.tel}</b>
+            </div>
+            <!--导航开始-->
+            <div class="nav">
+                <ul class="clearfix">
+                    <li class="nav_on"><a href="__ROOT__/">首页</a></li>
+                    <nav posstion="top" order="sort DESC">
+                        <li><a href="{$link}">{$nav_name}</a></li>
+                        <notempty name="child">
+                            <ul>
+                                <volist name="child" id="nc">
+                                <li>
+                                    <a href="{$nc.link}">{$nc.nav_name}</a>
+                                </li>
+                                </volist>
+                            </ul>
+                        </notempty>
+                    </nav>
+                </ul>
+            </div>
+            <!--导航结束-->
+        </div>
+    </div>
+    <!--header结束-->
