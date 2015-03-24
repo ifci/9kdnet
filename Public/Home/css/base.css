@@ -1,0 +1,104 @@
+@charset "utf-8";
+html, body, form, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, em, address, a, input, textarea, span, strong, img{margin: 0px;padding: 0px}
+body{font-size: 12px;color: #000;font-family:"微软雅黑";}
+ul, dl{list-style: none}
+input, textarea, select, button{font-size: 12px}
+i,em{font-style: normal;}
+img{border: none}
+a{color: #000;text-decoration: none;blr:expression(this.onFocus=this.blur());outline: none;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+table{border-collapse: collapse}
+table, thead, tbody, tfoot, tr, td{margin: 0px}
+.clear{clear: both;height: 0px;line-height: 0px;font-size: 0px;overflow: hidden;visibility: hidden}
+h1, h2, h3, h4, h5, h6{font-size: 12px;font-weight: normal}
+::selection{background: #6f346a;color: #fff}
+::-moz-selection{background:#6f346a;
+color:#fff}
+::-webkit-selection{background:#6f346a;
+color:#fff}
+section, article, aside, header, footer, nav, dialog, figure{display: block;}
+.clear10{clear: both;height: 10px;line-height: 0px;font-size: 0px;overflow: hidden;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{*+height:1%;}
+.pr{position: relative;z-index: 0;}
+.pa{position: absolute;}
+.tin{text-indent:2em;}
+.dib{display: inline-block;*display:inline;zoom:1;}
+.vm{vertical-align: middle;}
+.tal{text-align: left;}
+.tac{text-align: center;}
+.tar{text-align: right;}
+.fl{float:left;}
+.fr{float:right;}
+.show{display:block;}
+.center{width:1000px; margin:auto;}
+.w50{width: 50%;}
+.pl10{padding-left: 10px;}
+.pt10{padding-top: 10px;}
+.pb30{padding-bottom: 30px;}
+.wimg{overflow: hidden;}
+.wimg img{width: 100%;}
+.w38{width: 38%;}
+.w30{width: 32%;}
+.mt20{margin-top: 20px;}
+.icon{background: url(../images/icon.png) no-repeat;display: block;}
+.bgf8{background:url(../images/jkd_41.png);}
+.bgf{background: #fff;}
+
+
+
+/**********  header  *********/
+#header{width:1000px;margin: auto;padding-bottom: 3em;}
+.logo{width:30%;font-family: "宋体";margin-top: 2.5em;}
+.logo_b{color: #666;font-size: 14px;text-align: center;width: 55%;line-height: 1.4em;margin-top: 1em;padding: 0 .3em;font-family: -webkit-pictograph;}
+.logo_t{padding-left: 1.4em;}
+.logo_t img{display: block;float: left;}
+.city_active{background: url(../images/arrow.png) right center no-repeat;padding-right: 1.2em;margin-left: -6px;}
+.header_r{width: 67%;}
+.city_ul{ top: 20px;left: 180px; border: none;outline: none;}
+.city_ul li{line-height: 20px;cursor: pointer;}
+.tel{color: #333;font-size: 18px;font-family: "微软雅黑";/* background: url(../images/share.png) right center no-repeat; */text-align: right;margin-right: .5em;line-height: 4em;height: 4em;}
+.tel a{width: 2em;display: inline-block;height: 2em;float: right;margin:.9em 0 0 .8em;}
+.tel b{}
+.tel i{color:#ff0000;}
+
+
+
+
+/**********  nav *********/
+.nav{width:100%;margin-top: 2.2em;}
+.nav > ul{margin:auto;}
+.nav > ul > li{width:81px;height: 36px;line-height: 36px; float:left; text-align:center;background: url(../images/nav_01.png) no-repeat;margin-left: 16px;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+.nav > ul > li:first-child{margin-left:0;}
+.nav > ul > li:hover,.nav .nav_on{background: url(../images/nav_02.png) no-repeat;}
+.nav > ul > li > a{display: block;color: #666;}
+.nav > ul > li:hover > a,.nav .nav_on > a{color:#fff;}
+.nav2{background: #fff;display: none;position: relative;z-index: 999;}
+.nav2 li{border-top: 1px solid #c3c3c3;}
+.nav2 li:hover a{color: #fac110;}
+
+
+
+/**********  content  *********/
+#content{width:100%; background:#fefefe;}
+
+
+
+
+
+
+/**********  footer  *********/
+#footer{width:100%;background: #000;color: #fff;}
+.flink{line-height: 24px;padding: 5px 0;text-transform:Uppercase;}
+.flink a{color: #fff;}
+.flink span{padding: 0 8px 0 10px;}
+
+
+.cont_h10{background: #4d4d4d;padding-bottom: 10px;}
+.cont_ty45{border-bottom: 1px solid #bebebe;}
+.cont_ty45 li{line-height: 40px;float: left;width: 14.2%;text-align: center;}
+.cont_ty45 a{color: #fff;}
+.cont_ty45 a:hover{color: #fcc010;}
+.cont_ty45 a:hover{color: #fcc010;}
+.cont_ty47{width: 48%;background: url(../images/jkd_06.png) left center no-repeat;font-size: 14px;padding: 50px 0 50px 8%;line-height: 22px;}
+.cont_ty48{width: 25%;background: url(../images/jkd_06.png) left center no-repeat;font-size: 14px;padding: 50px 0 50px 8%;line-height: 22px;}
+.cont_ty49{width:11%;line-height: 30px;padding-top: 15px;}
