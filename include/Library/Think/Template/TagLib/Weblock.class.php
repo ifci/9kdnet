@@ -43,7 +43,7 @@ class Weblock extends TagLib{
         }
         $str='<?php $__m_news=M("news");?>';
         $str.='<?php $_news_list=$__m_news
-        ->field("id,cid,title,update_time,image_id,status,published,summary")
+        ->field("id,cid,title,update_time,image_id,status,published,summary,url")
         ->where('.$where.')
         ->order("'.$order.'")
         ->limit('.$limit.')
@@ -145,4 +145,4 @@ class Weblock extends TagLib{
     }
 
 
-} 
+}

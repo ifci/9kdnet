@@ -24,7 +24,7 @@
                 <tr>
                     <td>ID</td>
                     <td>姓名</td>
-                    <td>邮箱</td>
+                    <td>电话</td>
                     <td>留言时间</td>
                     <td width="300">留言信息</td>
                     <td width="150">审核/删除</td>
@@ -34,7 +34,7 @@
                     <tr align="center" id="{$vo.id}">
                         <td align="left">{$vo.id}</td>
                         <td>{$vo.username}</td>
-                        <td>{$vo.email}<br />{$vo.moblie}</td>
+                        <td>{$vo.moblie}</td>
                         <td>{$vo.addtime|date="Y-m-d H:i:s",###}</td>
                         <td>{$vo.content}</td>
                         <td><a title="审核状态" href="javascript:void(0);" onclick="changeStatus({$vo.id},this)"><img src="__STATIC__/Img/action_{$vo.display}.png" border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a link="{:U('Siteinfo/delmessage/',array('id'=>$vo['id']))}" href="javascript:void(0)" name="{$vo.id}" class="del"><img src="__STATIC__/Img/action_remove.png" border="0"></a> </td>

@@ -136,7 +136,13 @@ class SiteinfoController extends CommonController {
         $count = $M->count();
         $page = new \Think\Page($count, 12);
         $showPage = $page->show();
-        $list=$M->field('id,unique_id,page_name,display')->order('id desc')->limit("$page->firstRow, $page->listRows")->select();
+        $where['unique_id'] = array(array('eq','kcjs'),array('eq','fwjs'),array('eq','jkdjs'),'or');
+
+        // $where['unique_id'] = array('kcjs','fwjs');
+        // $where['unique_id'] = 'kcjs';
+        // $where['unique_id'] = 'fwjs';
+        // $where['_logic'] = 'OR';
+        $list=$M->field('id,unique_id,page_name,display')->where($where)->order('id desc')->limit("$page->firstRow, $page->listRows")->select();
         $this->assign("page", $showPage);
         $this->assign("list",$list);
         $this->display();
@@ -164,10 +170,10 @@ class SiteinfoController extends CommonController {
                 echo json_encode(array("status" => 0, "info" => "标题已经存在，请修改"));
                 exit;
             }
-            if($m_page->where($map2)->count()>0){
+            /*if($m_page->where($map2)->count()>0){
                 echo json_encode(array("status" => 0, "info" => "同一种语言别名已经存在，请修改"));
                 exit;
-            }
+            }*/
             if($data['id']){
                 if($m_page->where('id='.$data['id'])->save($data)){
                     echo json_encode(array("status" => 1, "info" => "修改单页成功",'url'=>U('Siteinfo/page')));
@@ -464,7 +470,7 @@ class SiteinfoController extends CommonController {
         $status=$m_message->where($map)->getField('display');
         $data['display']=abs($status-1);
         if($m_message->where($map)->save($data)){
-            echo json_encode(array("status" => 1, "info" => '<img src="Public/Img/action_'.$data['display'].'.png" border="0">'));
+            echo json_encode(array("status" => 1, "info" => '<img src="'.__ROOT__.'/Public/Img/action_'.$data['display'].'.png" border="0">'));
             exit;
         }
         return false;

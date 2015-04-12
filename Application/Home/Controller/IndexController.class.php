@@ -7,6 +7,8 @@ class IndexController extends BaseController {
     public function index() {
         $this->assign("ad_info", $this->getAd());
         $this->assign('webtitle',L('T_HOME'));
+        $this->gsry = M('Page')->where("unique_id = 'gsry' AND display = 1")->order('id desc')->field('id,page_name,image_id')->select();
+        $this->assign("hzhb", M('Ad')->where("position = 'bottom'")->order('id desc')->field('id,ad_name,ad_link,ad_img')->limit('5')->select());
         $this->display();
     }
 

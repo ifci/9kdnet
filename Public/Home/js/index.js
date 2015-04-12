@@ -1,9 +1,7 @@
 $(window).load(function() {
-            $('.flexslider').flexslider({
-
-                 });
-          });
-var __IMG__ = "../../Public/images";
+    $('.flexslider').flexslider();
+});
+var __IMG__ = "../Public/Home/images";
 $(function() {
 
 	$('.flexslider').hover(function() {			//幻灯片左右按钮显示隐藏

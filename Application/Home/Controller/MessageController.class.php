@@ -34,20 +34,22 @@ class MessageController extends BaseController {
      */
     public function add(){
         if (IS_POST) {
-        if (check_verify($_POST['verify_code'])==false) {
-            $this->error('验证码错误啦，再输入吧');
+            if(!$_POST['name']){
+                $this->error('请填写姓名');
+            }else if(!$_POST['tel']){
+                $this->error('请填写联系方式');
+            }else if (check_verify($_POST['verify_code'])==false) {
+                $this->error('验证码错误啦，再输入吧');
+            }
+            $data['username']=I('post.name');
+            $data['moblie']=I('post.tel');
+            $data['addtime']=time();
+            $message=M('message');
+            if($message->add($data)){
+                    $this->success('留言成功');
+            }else{
+                    $this->error('留言失败');
+            }
         }
-        $data['username']=I('post.username');
-        $data['email']=I('post.email');
-        $data['moblie']=I('post.moblie');
-        $data['addtime']=time();
-        $data['content']=strip_tags($_POST['content']);
-        $message=M('message');
-        if($message->add($data)){
-                $this->success('留言成功');
-        }else{
-                $this->error('留言失败');
-        }
-      }
     }
 }

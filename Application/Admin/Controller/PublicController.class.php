@@ -62,6 +62,7 @@ class PublicController extends Controller {
     }
 
     public function verify_code(){
+    	ob_clean();
         $Verify = new \Think\Verify();
         $Verify->fontSize = 17;
         $Verify->length   = 4;

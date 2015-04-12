@@ -11,12 +11,12 @@ return array(
         'news/:id\d'    => 'news/read',
         'news/'    => 'news/index',
         'news/:cid\d'    => 'news/index',
-        
+
         /*产品*/
         'product/:id\d'    => 'product/read',
         'product/'    => 'product/index',
         'product/:cid\d'    => 'product/index',
-        
+
          /*单页*/
         'page/:name'    => 'page/index',
     ),

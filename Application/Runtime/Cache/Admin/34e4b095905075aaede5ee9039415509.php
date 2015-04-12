@@ -4,20 +4,20 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>产品管理-<?php echo ($site["SITE_INFO"]["name"]); ?></title>
         <?php $addCss=""; $addJs=""; $currentNav ='产品管理 > 产品列表'; ?>
-        <link rel="stylesheet" type="text/css" href="/9kdnet/Public/Min/?f=/9kdnet/Public/Admin/Css/base.css|/9kdnet/Public/Admin/Css/layout.css|/9kdnet/Public/Js/asyncbox/skins/default.css<?php echo ($addCss); ?>" />
-<script type="text/javascript" src="/9kdnet/Public/Min/?f=/9kdnet/Public/Js/jquery-1.9.0.min.js|/9kdnet/Public/Js/jquery.lazyload.js|/9kdnet/Public/Js/functions.js|/9kdnet/Public/Admin/Js/base.js|/9kdnet/Public/Js/jquery.form.js|/9kdnet/Public/Js/asyncbox/asyncbox.js<?php echo ($addJs); ?>"></script>
+        <link rel="stylesheet" type="text/css" href="/9kd/Public/Min/?f=/9kd/Public/Admin/Css/base.css|/9kd/Public/Admin/Css/layout.css|/9kd/Public/Js/asyncbox/skins/default.css<?php echo ($addCss); ?>" />
+<script type="text/javascript" src="/9kd/Public/Min/?f=/9kd/Public/Js/jquery-1.9.0.min.js|/9kd/Public/Js/jquery.lazyload.js|/9kd/Public/Js/functions.js|/9kd/Public/Admin/Js/base.js|/9kd/Public/Js/jquery.form.js|/9kd/Public/Js/asyncbox/asyncbox.js<?php echo ($addJs); ?>"></script>
     </head>
     <body>
         <div class="wrap">
             <div id="Top">
-    <div class="logo"><a target="_blank" href="<?php echo ($site["WEB_ROOT"]); ?>"><img src="/9kdnet/Public/Admin/Img/logo.png" /></a></div>
+    <div class="logo"><a target="_blank" href="<?php echo ($site["WEB_ROOT"]); ?>"><img src="/9kd/Public/Admin/Img/logo.png" /></a></div>
     <div class="help"><a href="http://www.conist.com/bbs" target="_blank">使用帮助</a><span><a href="http://www.conist.com" target="_blank">关于</a></span></div>
     <div class="menu">
         <ul> <?php echo ($menu); ?> </ul>
     </div>
 </div>
 <div id="Tags">
-    <div class="userPhoto"><img src="/9kdnet/Public/Admin/Img/userPhoto.jpg" /> </div>
+    <div class="userPhoto"><img src="/9kd/Public/Admin/Img/userPhoto.jpg" /> </div>
     <div class="navArea">
         <div class="userInfo"><div><a href="<?php echo U('Webinfo/index');?>" class="sysSet"><span>&nbsp;</span>系统设置</a> <a href="<?php echo U("Public/loginOut");?>" class="loginOut"><span>&nbsp;</span>退出系统</a></div>欢迎您，<?php echo ($my_info["email"]); ?></div>
         <div class="nav"><font id="today"><?php echo date("Y-m-d H:i:s"); ?></font>您的位置：<?php echo ($currentNav); ?></div>
@@ -52,22 +52,22 @@
                             </tr>
                         </thead>
                         <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr align="center" id="<?php echo ($vo["id"]); ?>">
-                                <td align="left"><img src="/9kdnet/Public/Img/<?php echo ($vo["lang"]); ?>.png"><a href="/9kdnet/index.php/conist/Product/edit?id=<?php echo ($vo["id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+                                <td align="left"><img src="/9kd/Public/Img/<?php echo ($vo["lang"]); ?>.png"><a href="/9kd/jkd/Product/edit?id=<?php echo ($vo["id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
                                 <td><?php echo ($vo["cidName"]); ?></td>
                                 <td><?php echo (date("Y-m-d H:i:s",$vo["published"])); ?></td>
                                 <td><?php echo ($vo["aidName"]); ?></td>
                                 <td><a href="javascript:void(0);" onclick="changeStatus(<?php echo ($vo["id"]); ?>,this)"><?php echo ($vo["status"]); ?></a></td>
-                                <td><a href="javascript:void(0);"  title="推荐" onclick="changeAttr(<?php echo ($vo["id"]); ?>,this)"><img src="/9kdnet/Public/Img/action_<?php echo ($vo["is_recommend"]); ?>.png" border="0"></a>
+                                <td><a href="javascript:void(0);"  title="推荐" onclick="changeAttr(<?php echo ($vo["id"]); ?>,this)"><img src="/9kd/Public/Img/action_<?php echo ($vo["is_recommend"]); ?>.png" border="0"></a>
                                     &nbsp;&nbsp;
-                                    <a href="javascript:void(0);" title="推荐到手机" onclick="changePhoneStatus(<?php echo ($vo["id"]); ?>,this)"><img src="/9kdnet/Public/Img/iphone-<?php echo ($vo["wap_display"]); ?>.png" border="0">
+                                    <a href="javascript:void(0);" title="推荐到手机" onclick="changePhoneStatus(<?php echo ($vo["id"]); ?>,this)"><img src="/9kd/Public/Img/iphone-<?php echo ($vo["wap_display"]); ?>.png" border="0">
                                 </td>
-                                <td>[ <a href="/9kdnet/index.php/conist/Product/edit?id=<?php echo ($vo["id"]); ?>&do=copy">复制 </a> ][ <a href="/9kdnet/index.php/conist/Product/edit?id=<?php echo ($vo["id"]); ?>">编辑 </a> ] [ <a link="<?php echo U('Product/del/',array('id'=>$vo['id']));?>" href="javascript:void(0)" name="<?php echo ($vo["title"]); ?>" class="del">删除 </a> ]</td>
+                                <td>[ <a href="/9kd/jkd/Product/edit?id=<?php echo ($vo["id"]); ?>&do=copy">复制 </a> ][ <a href="/9kd/jkd/Product/edit?id=<?php echo ($vo["id"]); ?>">编辑 </a> ] [ <a link="<?php echo U('Product/del/',array('id'=>$vo['id']));?>" href="javascript:void(0)" name="<?php echo ($vo["title"]); ?>" class="del">删除 </a> ]</td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         <tr><td colspan="7" align="right"><?php echo ($page); ?></td></td></tr>
 
 
                         <tr><td colspan="7" align="left">
-                            <form action="/9kdnet/index.php/conist/Product/index" method="get">
+                            <form action="/9kd/jkd/Product/index.html" method="get">
                                 标题：<input type="text" name="title" value="<?php echo $_GET['title']; ?>" size="30" style="margin-right: 20px;">
                                 分类：<select name="cid" style="margin-right: 20px;">
                                 <option value="">--请选择--</option>

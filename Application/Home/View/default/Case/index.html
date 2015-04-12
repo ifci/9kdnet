@@ -1,0 +1,48 @@
+<include file="Base:header" />
+<!--content开始-->
+    <div id="content">
+        <include file="Base:inside" />
+        <!-- 案例 -->
+        <div class="introduction bgf8 pb30">
+            <div class="main_t center tac">
+                <b>{:L('T_CASE')}</b>
+            </div>
+            <ul class="case center">
+                <volist name="list" id="vo">
+                <li>
+                    <div class="case_ty1 clearfix">
+                        <a href="{:U('case/read',array('id'=>$vo['id']))}" title="{$vo.title}">
+                        <div class="case_ty2 fl wimg">
+                            <img src="{:get_default_img($vo['image_id'])}" alt="" />
+                        </div>
+                        <div class="case_ty3 fl">
+                            <div class="case_ty4 case_ty7">公司名称：{$vo.title}</div>
+                            <div class="case_ty7">
+
+                            </div>
+                            <div class="case_ty5">
+                                {$vo.summary}
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="case_ty6 clearfix">
+                        <div class="w50 fl">
+                            域名网址：{$vo.url}
+                        </div>
+                        <div class="w50 tar fl">
+                            入驻时间：{$vo.published|date='Y-m-d',###}
+                            <span class="dib vm"></span>
+                            <a href="{:U('case/read',array('id'=>$vo['id']))}" title="{$vo.title}" title="">查看详情>></a>
+                        </div>
+                    </div>
+                </li>
+                </volist>
+                <div class="tac">{$page}</div>
+                <!-- <div class="paging tac">
+                 12 条记录 1/3 页  <a href='/case/index/p/2.html'>下一页</a>     &nbsp;<span class='current'>1</span>&nbsp;<a href='/case/index/p/2.html'>&nbsp;2&nbsp;</a>&nbsp;<a href='/case/index/p/3.html'>&nbsp;3&nbsp;</a>                   </div> -->
+            </ul>
+        </div>
+    </div>
+    <!--content结束-->
+<include file="Base:footer" />

@@ -1,0 +1,2253 @@
+[ 2015-03-31T07:08:06+08:00 ] ::1 /9kd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.315970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.182326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.201295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.383911s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.526611s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.077838s ]
+SQL: SHOW COLUMNS FROM `jkd_ad` [ RunTime:1.445686s ]
+SQL: SELECT * FROM `jkd_ad` WHERE ( `lang` = 'zh-cn' ) AND ( `position` = 'index' ) ORDER BY sort DESC  [ RunTime:0.001081s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\www\9kd\include\Library\Think\Template.class.php 第 527 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `jkd_tag` [ RunTime:0.580575s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'kcdg' ) LIMIT 1   [ RunTime:0.126596s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'jjfa' ) LIMIT 1   [ RunTime:0.000806s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'sxqy' ) LIMIT 1   [ RunTime:0.000730s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'kcst' ) LIMIT 1   [ RunTime:0.000729s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'xqb' ) LIMIT 1   [ RunTime:0.000724s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'xtb' ) LIMIT 1   [ RunTime:0.000830s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'ldb' ) LIMIT 1   [ RunTime:0.000730s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'sl' ) LIMIT 1   [ RunTime:0.000701s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'zjzx' ) LIMIT 1   [ RunTime:0.000659s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'zygx' ) LIMIT 1   [ RunTime:0.000722s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'aboutus' ) LIMIT 1   [ RunTime:0.000716s ]
+NOTIC: [8] Undefined index: limit D:\www\9kd\include\Library\Think\Template\TagLib\Weblock.class.php 第 88 行.
+NOTIC: [8] Undefined index: limit D:\www\9kd\include\Library\Think\Template\TagLib\Weblock.class.php 第 88 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002593s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002725s ]
+NOTIC: [8] Undefined variable: info D:\www\9kd\Application\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 6 行.
+NOTIC: [8] Undefined variable: info D:\www\9kd\Application\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 7 行.
+SQL: SHOW COLUMNS FROM `jkd_nav` [ RunTime:0.230670s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( lang='zh-cn'  AND type='top' AND parent_id=0 ) ORDER BY sort DESC  [ RunTime:0.001065s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( parent_id=52 ) ORDER BY sort DESC  [ RunTime:0.000702s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( parent_id=53 ) ORDER BY sort DESC  [ RunTime:0.000697s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( parent_id=54 ) ORDER BY sort DESC  [ RunTime:0.000654s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( parent_id=55 ) ORDER BY sort DESC  [ RunTime:0.000692s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( parent_id=56 ) ORDER BY sort DESC  [ RunTime:0.000680s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( parent_id=57 ) ORDER BY sort DESC  [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `jkd_news` [ RunTime:0.064011s ]
+SQL: SELECT `id`,`cid`,`title`,`update_time`,`image_id`,`status`,`published`,`summary` FROM `jkd_news` WHERE ( is_recommend=1 and cid=58 AND status=1 AND lang='zh-cn' ) ORDER BY id DESC LIMIT 6   [ RunTime:0.773199s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `jkd_images` [ RunTime:0.405250s ]
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 56 ) LIMIT 1   [ RunTime:0.006588s ]
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 55 ) LIMIT 1   [ RunTime:0.000726s ]
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 54 ) LIMIT 1   [ RunTime:0.000618s ]
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 53 ) LIMIT 1   [ RunTime:0.000606s ]
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+SQL: SELECT `id`,`cid`,`title`,`update_time`,`image_id`,`status`,`published`,`summary` FROM `jkd_news` WHERE ( is_recommend=1 and cid=57 AND status=1 AND lang='zh-cn' ) ORDER BY id DESC LIMIT 6   [ RunTime:0.001386s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 59 ) LIMIT 1   [ RunTime:0.000747s ]
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 58 ) LIMIT 1   [ RunTime:0.000591s ]
+NOTIC: [8] Undefined offset: 3 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 57 ) LIMIT 1   [ RunTime:0.000618s ]
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 52 ) LIMIT 1   [ RunTime:0.000621s ]
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+SQL: SELECT `id`,`cid`,`title`,`update_time`,`image_id`,`status`,`published`,`summary` FROM `jkd_news` WHERE ( is_recommend=1 and cid=57 AND status=1 AND lang='zh-cn' ) ORDER BY id DESC LIMIT 6   [ RunTime:0.001076s ]
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 3 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+SQL: SHOW COLUMNS FROM `jkd_product` [ RunTime:0.136938s ]
+SQL: SELECT `id`,`cid`,`title`,`update_time`,`status`,`published`,`image_id`,`psize`,`summary` FROM `jkd_product` WHERE ( is_recommend=1 AND status=1 AND lang='zh-cn' ) ORDER BY id DESC LIMIT 3   [ RunTime:0.002689s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 49 ) LIMIT 1   [ RunTime:0.000674s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000761s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 42 ) LIMIT 1   [ RunTime:0.000765s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `id`,`cid`,`title`,`update_time`,`image_id`,`status`,`published`,`summary` FROM `jkd_news` WHERE ( is_recommend=1 and cid=57 AND status=1 AND lang='zh-cn' ) ORDER BY id DESC LIMIT 6   [ RunTime:0.001078s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 3 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+SQL: SELECT `id`,`cid`,`title`,`update_time`,`image_id`,`status`,`published`,`summary` FROM `jkd_news` WHERE ( is_recommend=1 AND status=1 AND lang='zh-cn' ) ORDER BY id DESC LIMIT 6   [ RunTime:0.000961s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 3 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+SQL: SELECT * FROM `jkd_nav` WHERE ( lang='zh-cn'  AND type='bottom' AND parent_id=0 ) ORDER BY sort DESC  [ RunTime:0.000929s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\Application\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 821 行.
+SQL: SHOW COLUMNS FROM `jkd_link` [ RunTime:0.124921s ]
+SQL: SELECT * FROM `jkd_link` WHERE ( display=1 ) ORDER BY sort DESC LIMIT 6   [ RunTime:0.000645s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\Application\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 833 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:4.723526s ]
+INFO: [ view_parse ] --END-- [ RunTime:4.723668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.270093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.270178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.359285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.359433s ]
+
+[ 2015-03-31T07:08:07+08:00 ] ::1 /9kd/Public/Home/layerslider/css/layerslider.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003109s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.004131s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000461s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.209745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.209936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001253s ]
+
+[ 2015-03-31T07:08:07+08:00 ] ::1 /9kd/Public/Home/layerslider/jQuery/jquery-easing-1.3.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002768s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.006379s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000747s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001149s ]
+
+[ 2015-03-31T07:08:07+08:00 ] ::1 /9kd/Public/Home/layerslider/js/layerslider.kreaturamedia.jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003044s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.004519s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000515s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001216s ]
+
+[ 2015-03-31T07:08:22+08:00 ] ::1 /9kd/Public/Home/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002222s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005699s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.007728s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000848s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001382s ]
+
+[ 2015-03-31T07:08:30+08:00 ] ::1 /9kd/Public/Home/images/social_facebook.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002063s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005034s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.007099s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000860s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000456s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001011s ]
+
+[ 2015-03-31T07:08:30+08:00 ] ::1 /9kd/Public/Home/images/logo_ft_1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001806s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004728s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.006347s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000742s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000525s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001457s ]
+
+[ 2015-03-31T07:08:31+08:00 ] ::1 /9kd/Public/Home/images/social_linkedin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001996s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.003343s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000375s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+
+[ 2015-03-31T07:08:31+08:00 ] ::1 /9kd/Public/Home/images/social_twitter.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.004080s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000488s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+
+[ 2015-03-31T07:08:31+08:00 ] ::1 /9kd/Public/Home/images/social_flickr.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002288s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.036982s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+
+[ 2015-03-31T07:08:31+08:00 ] ::1 /9kd/Public/Home/images/social_dribble.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001806s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004881s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.007234s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000847s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001231s ]
+
+[ 2015-03-31T07:08:46+08:00 ] ::1 /9kd/index.php/conist/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001497s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003928s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.006533s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000798s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001013s ]
+
+[ 2015-03-31T07:08:55+08:00 ] ::1 /9kd/index.php/jkd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+
+[ 2015-03-31T07:08:56+08:00 ] ::1 /9kd/jkd/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000402s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.200636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.200822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.177467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.178713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2015-03-31T07:08:57+08:00 ] ::1 /9kd/jkd/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002084s ]
+
+[ 2015-03-31T07:09:07+08:00 ] ::1 /9kd/jkd/Public/verify_code.html?rand=0.8916883044876158
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002301s ]
+
+[ 2015-03-31T07:09:08+08:00 ] ::1 /9kd/jkd/Public/verify_code.html?rand=0.8916883044876158?rand=0.9615905594546348
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001975s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002140s ]
+
+[ 2015-03-31T07:09:31+08:00 ] ::1 /9kd/jkd/Public/verify_code.html?rand=0.8916883044876158?rand=0.9615905594546348
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002424s ]
+
+[ 2015-03-31T07:09:35+08:00 ] ::1 /9kd/jkd/Public/verify_code.html?rand=0.8916883044876158?rand=0.9615905594546348
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001435s ]
+
+[ 2015-03-31T07:09:46+08:00 ] ::1 /9kd/jkd.php/Public/verify_code.html?rand=0.8916883044876158?rand=0.9615905594546348
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001986s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.003230s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000389s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+
+[ 2015-03-31T07:09:53+08:00 ] ::1 /9kd//Public/verify_code.html?rand=0.8916883044876158?rand=0.9615905594546348
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002363s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.004294s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002498s ]
+
+[ 2015-03-31T07:09:57+08:00 ] ::1 /9kd/Public/verify_code.html?rand=0.8916883044876158?rand=0.9615905594546348
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001847s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.003135s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2015-03-31T07:10:03+08:00 ] ::1 /9kd/Public/verify_code.html?rand=0.8916883044876158
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002824s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.027231s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001913s ]
+
+[ 2015-03-31T07:15:53+08:00 ] ::1 /9kd/jkd/Public/verify_code.html?rand=0.8916883044876158?rand=0.9615905594546348?rand=0.5032971757464111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000949s ]
+
+[ 2015-03-31T07:15:54+08:00 ] ::1 /9kd/jkd/Public/verify_code.html?rand=0.8916883044876158?rand=0.9615905594546348?rand=0.5032971757464111?rand=0.6895922117400914
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2015-03-31T07:15:55+08:00 ] ::1 /9kd/jkd/Public/verify_code.html?rand=0.8916883044876158?rand=0.9615905594546348?rand=0.5032971757464111?rand=0.6895922117400914?rand=0.45435263868421316
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2015-03-31T07:16:00+08:00 ] ::1 /9kd/jkd/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000444s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001468s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001850s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002692s ]
+
+[ 2015-03-31T07:16:00+08:00 ] ::1 /9kd/jkd/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001788s ]
+
+[ 2015-03-31T07:17:01+08:00 ] ::1 /9kd/jkd/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2015-03-31T07:17:01+08:00 ] ::1 /9kd/index.php/jkd/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2015-03-31T07:17:05+08:00 ] ::1 /9kd/jkd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+
+[ 2015-03-31T07:17:06+08:00 ] ::1 /9kd/index.php/jkd/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001741s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002154s ]
+
+[ 2015-03-31T07:17:06+08:00 ] ::1 /9kd/index.php/jkd/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001488s ]
+
+[ 2015-03-31T07:17:09+08:00 ] ::1 /9kd/index.php/jkd/Public/verify_code.html?rand=0.5586291870567948
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2015-03-31T07:17:30+08:00 ] ::1 /9kd/index.php/jkd/Public/verify_code.html?rand=0.5586291870567948
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2015-03-31T07:17:39+08:00 ] ::1 /9kd/index.php/jkd/Public/verify_code.php?rand=0.5586291870567948
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+ERR: 非法操作:verify_code.php
+
+[ 2015-03-31T07:17:50+08:00 ] ::1 /9kd/index.php/jkd/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001774s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002857s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001997s ]
+
+[ 2015-03-31T07:17:51+08:00 ] ::1 /9kd/jkd/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002179s ]
+
+[ 2015-03-31T07:18:01+08:00 ] ::1 /9kd/jkd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+
+[ 2015-03-31T07:18:01+08:00 ] ::1 /9kd/jkd/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001021s ]
+
+[ 2015-03-31T07:18:01+08:00 ] ::1 /9kd/jkd/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001041s ]
+
+[ 2015-03-31T07:18:05+08:00 ] ::1 /9kd/Public/verify_code.html?rand=0.8916883044876158
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002245s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.004655s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2015-03-31T07:18:40+08:00 ] ::1 /9kd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001716s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005520s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.012556s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `jkd_ad` [ RunTime:0.010116s ]
+SQL: SELECT * FROM `jkd_ad` WHERE ( `lang` = 'zh-cn' ) AND ( `position` = 'index' ) ORDER BY sort DESC  [ RunTime:0.001344s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\www\9kd\include\Library\Think\Template.class.php 第 527 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `jkd_tag` [ RunTime:0.006607s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'kcdg' ) LIMIT 1   [ RunTime:0.000534s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'jjfa' ) LIMIT 1   [ RunTime:0.000451s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'sxqy' ) LIMIT 1   [ RunTime:0.000451s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'kcst' ) LIMIT 1   [ RunTime:0.000469s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'xqb' ) LIMIT 1   [ RunTime:0.000452s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'xtb' ) LIMIT 1   [ RunTime:0.000445s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'ldb' ) LIMIT 1   [ RunTime:0.000461s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'sl' ) LIMIT 1   [ RunTime:0.000455s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'zjzx' ) LIMIT 1   [ RunTime:0.000452s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'zygx' ) LIMIT 1   [ RunTime:0.000464s ]
+SQL: SELECT `content` FROM `jkd_tag` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'aboutus' ) LIMIT 1   [ RunTime:0.000452s ]
+NOTIC: [8] Undefined index: limit D:\www\9kd\include\Library\Think\Template\TagLib\Weblock.class.php 第 88 行.
+NOTIC: [8] Undefined index: limit D:\www\9kd\include\Library\Think\Template\TagLib\Weblock.class.php 第 88 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001647s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001728s ]
+NOTIC: [8] Undefined variable: info D:\www\9kd\Application\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 6 行.
+NOTIC: [8] Undefined variable: info D:\www\9kd\Application\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 7 行.
+SQL: SHOW COLUMNS FROM `jkd_nav` [ RunTime:0.005405s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( lang='zh-cn'  AND type='top' AND parent_id=0 ) ORDER BY sort DESC  [ RunTime:0.000636s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( parent_id=52 ) ORDER BY sort DESC  [ RunTime:0.000462s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( parent_id=53 ) ORDER BY sort DESC  [ RunTime:0.000471s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( parent_id=54 ) ORDER BY sort DESC  [ RunTime:0.000470s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( parent_id=55 ) ORDER BY sort DESC  [ RunTime:0.000502s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( parent_id=56 ) ORDER BY sort DESC  [ RunTime:0.000497s ]
+SQL: SELECT * FROM `jkd_nav` WHERE ( parent_id=57 ) ORDER BY sort DESC  [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `jkd_news` [ RunTime:0.005313s ]
+SQL: SELECT `id`,`cid`,`title`,`update_time`,`image_id`,`status`,`published`,`summary` FROM `jkd_news` WHERE ( is_recommend=1 and cid=58 AND status=1 AND lang='zh-cn' ) ORDER BY id DESC LIMIT 6   [ RunTime:0.000791s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `jkd_images` [ RunTime:0.005297s ]
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 56 ) LIMIT 1   [ RunTime:0.000503s ]
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 55 ) LIMIT 1   [ RunTime:0.000447s ]
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 54 ) LIMIT 1   [ RunTime:0.000419s ]
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 53 ) LIMIT 1   [ RunTime:0.000408s ]
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+SQL: SELECT `id`,`cid`,`title`,`update_time`,`image_id`,`status`,`published`,`summary` FROM `jkd_news` WHERE ( is_recommend=1 and cid=57 AND status=1 AND lang='zh-cn' ) ORDER BY id DESC LIMIT 6   [ RunTime:0.000734s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 59 ) LIMIT 1   [ RunTime:0.000408s ]
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 58 ) LIMIT 1   [ RunTime:0.000419s ]
+NOTIC: [8] Undefined offset: 3 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 57 ) LIMIT 1   [ RunTime:0.000408s ]
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 52 ) LIMIT 1   [ RunTime:0.000409s ]
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+SQL: SELECT `id`,`cid`,`title`,`update_time`,`image_id`,`status`,`published`,`summary` FROM `jkd_news` WHERE ( is_recommend=1 and cid=57 AND status=1 AND lang='zh-cn' ) ORDER BY id DESC LIMIT 6   [ RunTime:0.000683s ]
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 3 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+SQL: SHOW COLUMNS FROM `jkd_product` [ RunTime:0.005695s ]
+SQL: SELECT `id`,`cid`,`title`,`update_time`,`status`,`published`,`image_id`,`psize`,`summary` FROM `jkd_product` WHERE ( is_recommend=1 AND status=1 AND lang='zh-cn' ) ORDER BY id DESC LIMIT 3   [ RunTime:0.000723s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 49 ) LIMIT 1   [ RunTime:0.000433s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000412s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `jkd_images` WHERE ( `id` = 42 ) LIMIT 1   [ RunTime:0.000410s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+SQL: SELECT `id`,`cid`,`title`,`update_time`,`image_id`,`status`,`published`,`summary` FROM `jkd_news` WHERE ( is_recommend=1 and cid=57 AND status=1 AND lang='zh-cn' ) ORDER BY id DESC LIMIT 6   [ RunTime:0.000700s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 3 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+SQL: SELECT `id`,`cid`,`title`,`update_time`,`image_id`,`status`,`published`,`summary` FROM `jkd_news` WHERE ( is_recommend=1 AND status=1 AND lang='zh-cn' ) ORDER BY id DESC LIMIT 6   [ RunTime:0.000743s ]
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 3 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 4 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 5 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\www\9kd\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined offset: 18 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\www\9kd\Application\Common\Common\function.php 第 247 行.
+SQL: SELECT * FROM `jkd_nav` WHERE ( lang='zh-cn'  AND type='bottom' AND parent_id=0 ) ORDER BY sort DESC  [ RunTime:0.000651s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\Application\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 821 行.
+SQL: SHOW COLUMNS FROM `jkd_link` [ RunTime:0.005206s ]
+SQL: SELECT * FROM `jkd_link` WHERE ( display=1 ) ORDER BY sort DESC LIMIT 6   [ RunTime:0.000404s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\Application\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 833 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.176895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.177031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001312s ]
+
+[ 2015-03-31T07:18:42+08:00 ] ::1 /9kd/Public/Home/layerslider/css/layerslider.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001445s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004144s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.007878s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000747s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000940s ]
+
+[ 2015-03-31T07:19:30+08:00 ] ::1 /9kd/jkd/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2015-03-31T07:19:33+08:00 ] ::1 /9kd/jkd/Public/verify_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2015-03-31T07:20:15+08:00 ] ::1 /9kd/index.php/jkd/Public/verify_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2015-03-31T07:25:58+08:00 ] ::1 /9kd/jkd/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001859s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000449s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002122s ]
+
+[ 2015-03-31T07:25:58+08:00 ] ::1 /9kd/jkd/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001802s ]
+
+[ 2015-03-31T07:25:59+08:00 ] ::1 /9kd/jkd/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001801s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001167s ]
+
+[ 2015-03-31T07:26:00+08:00 ] ::1 /9kd/jkd/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2015-03-31T07:26:37+08:00 ] ::1 /9kd/jkd/Public/verify_code.html?rand=0.08403356955386698
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000983s ]
+
+[ 2015-03-31T07:26:38+08:00 ] ::1 /9kd/jkd/Public/verify_code.html?rand=0.08403356955386698?rand=0.06638769945129752
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2015-03-31T07:27:21+08:00 ] ::1 /9kd/jkd/Public/verify_code.html?rand=0.08403356955386698?rand=0.06638769945129752?rand=0.7775855993386358
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2015-03-31T07:33:30+08:00 ] ::1 /9kd/conist/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002307s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.004790s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+
+[ 2015-03-31T07:33:39+08:00 ] ::1 /9kd/conist/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2015-03-31T07:33:39+08:00 ] ::1 /9kd/conist/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2015-03-31T07:33:41+08:00 ] ::1 /9kd/conist/Public/verify_code.html?rand=0.6669732464943081
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2015-03-31T07:33:41+08:00 ] ::1 /9kd/conist/Public/verify_code.html?rand=0.6669732464943081?rand=0.4093812711071223
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001009s ]
+
+[ 2015-03-31T07:33:42+08:00 ] ::1 /9kd/conist/Public/verify_code.html?rand=0.6669732464943081?rand=0.4093812711071223?rand=0.2697642322164029
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2015-03-31T07:33:49+08:00 ] ::1 /9kd/conist/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001957s ]
+
+[ 2015-03-31T07:33:49+08:00 ] ::1 /9kd/conist/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2015-03-31T07:33:50+08:00 ] ::1 /9kd/conist/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001944s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002250s ]
+
+[ 2015-03-31T07:33:50+08:00 ] ::1 /9kd/conist/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2015-03-31T07:33:51+08:00 ] ::1 /9kd/conist/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001742s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001130s ]
+
+[ 2015-03-31T07:33:51+08:00 ] ::1 /9kd/conist/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001068s ]
+
+[ 2015-03-31T07:34:00+08:00 ] ::1 /9kd/conist/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001650s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004776s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\www\9kd\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `jkd_company` [ RunTime:0.008396s ]
+SQL: SELECT * FROM `jkd_company`  [ RunTime:0.000745s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\www\9kd\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\9kd\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001236s ]
+
+[ 2015-03-31T07:34:03+08:00 ] ::1 /9kd/jkd/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001150s ]
+
+[ 2015-03-31T07:34:05+08:00 ] ::1 /9kd/index.php/jkd/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001648s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2015-03-31T07:34:05+08:00 ] ::1 /9kd/jkd/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001235s ]
+
+[ 2015-03-31T07:34:10+08:00 ] ::1 /9kd/jkd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+
+[ 2015-03-31T07:34:10+08:00 ] ::1 /9kd/jkd/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2015-03-31T07:34:10+08:00 ] ::1 /9kd/jkd/Public/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001380s ]
+

@@ -17,10 +17,11 @@ return array(
     'LOAD_EXT_CONFIG' => 'systemConfig',
 
     'DEFAULT_C_LAYER'       =>  'Controller', // 默认的控制器层名称
-    'MODULE_ALLOW_LIST'     =>  array('Home','Conist'), // 配置你原来的分组列表
+    'MODULE_ALLOW_LIST'     =>  array('Home','Jkd'), // 配置你原来的分组列表
     'DEFAULT_MODULE'        =>  'Home', // 配置你原来的默认分组
 	'MODULE_DENY_LIST'      =>  array('Common','Runtime','Ucenter'),
-	'URL_MODULE_MAP'    =>    array('conist'=>'admin'),	//模块映射
+	'URL_MODULE_MAP'    =>    array('jkd'=>'admin'),	//模块映射
+    'URL_MODEL'=>2,
 
 
 );

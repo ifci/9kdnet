@@ -1,75 +1,88 @@
 <include file="Base:header" />
-<div class="head_title"><!-- HEAD TITLE -->
-    <div class="container_12">
-        <div class="grid_12">
 
-        </div>
-    </div>
-</div><!-- HEAD TITLE -->
-<div class="breadcrumbs"><!-- BREADCRUMBS -->
-    <div class="container_12">
-        <div class="grid_12">
-            <a href="__APP__">{$Think.lang.T_HOME}</a>
-            <a href='{:U("news/index")}' class="icon_meta">{$Think.lang.T_NEWS}</a>
-            <a class="icon_meta">{$info['title']}</a>
-            <form id="search" action="#" />
-            <fieldset>
-                <input type="text" name="search" />
-                <input type="submit" value="" />
-            </fieldset>
-            </form>
-        </div>
-    </div>
-</div><!-- END BREADCRUMBS -->
-<div class="main"><!-- MAIN -->
-    <div class="container_12">
-        <div class="grid_3"><!-- SIDEBAR -->
-            <div id="sidebar">
-                <div class="sideblock">
-                    <h3 class="title">{$Think.lang.T_NEWS}</h3>
-                    <div class="list-type-sidebar">
+
+ <!--content开始-->
+    <div id="content">
+        <include file="Base:inside" />
+        <!-- 案例 -->
+        <div class="introduction" style="margin-top:20px;">
+            <div class="casede center clearfix">
+                <div class="categoryLeft">
+                    <div class="fatherNav">
+                        热门资讯<a href="{:U('/News/')}" title="点击查看更多新闻">查看更多>></a>
+                    </div>
+                    <div class="leftNav">
                         <ul>
-                            <cat type="n" pid="0">
-                                <li><a href='{:U("news/index",array("cid"=>$cid))}'>{$name}</a></li>
-                            </cat>
+                            <volist name='hot' id='vo'>
+                            <li>
+                                <a href="{:U('News/read',array('id'=>$vo['id']))}" title="{$vo.title}">{$vo.title}</a>
+                            </li>
+                            </volist>
                         </ul>
                     </div>
+                    <div class="leftContact">
+                        <span>九口袋在线咨询</span>
+                        <div class="tencent">
+                            <ul>
+                                <li>建站顾问：&nbsp;&nbsp;
+                                    <a href="tencent://message/?uin={$site.qq}">
+                                        <img title="点击这里给我发消息" border="0" alt="点击这里给我发消息" src="http://pub.idqqimg.com/qconn/wpa/button/button_11.gif">
+                                    </a>
+                                </li>
+                                <li>技术支持：&nbsp;&nbsp;
+                                    <a href="tencent://message/?uin={$site.qq}">
+                                        <img title="点击这里给我发消息" border="0" alt="点击这里给我发消息" src="http://pub.idqqimg.com/qconn/wpa/button/button_11.gif">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="leftTel">
+                            咨询电话：{$site.tel}
+                        </span>
+                    </div>
+                    <div class="leftBottom"></div>
+                </div>
+
+
+
+
+<div style="float:left;width:730px;border:1px solid #c7c7c7;margin-bottom: 20px;">
+                <div class="casede_t tac">
+                        <b>{$info.title}</b>
+                    </div>
+                <p class="bottom">
+
+                </p>
+                    <div class="casede_c">
+                        {$info['content']}
+                    </div>
+
+                <div class="casede_b clearfix">
+                    <div class="casede_bl fl">
+                        <a href="{:$prev == null ? 'javascript:':U('News/read',array('id'=>$prev[id]))}" title="{$prev.title}">上一篇： {:$prev[title] == null ?'没有了':$prev[title]}</a>
+
+                    </div>
+                    <div class="casede_br fr">
+                        <a href="{:$next == null ? 'javascript:':U('News/read',array('id'=>$next[id]))}" title="{$next.title}">下一篇： {:$next[title] == null ?'没有了':$next[title]}</a>
+                    </div>
+                </div>
+                <div class="weibo">
+                    <script type="text/javascript">
+                        (function(){
+                        var url = "http://widget.weibo.com/distribution/comments.php?width=680&url=http%3A%2F%2F9koudai.net&color=cccccc,ffffff,4c4c4c,5093d5,cccccc,33fe54&colordiy=1&dpc=1";
+                        document.write('<iframe id="WBCommentFrame" src="' + url + '" scrolling="no" frameborder="0" style="width:680px"></iframe>');
+                        })();
+                        </script>
+                        <script src="http://tjs.sjs.sinajs.cn/open/widget/js/widget/comment.js" type="text/javascript" charset="utf-8"></script>
+                        <script type="text/javascript">
+                        window.WBComment.init({
+                            "id": "WBCommentFrame"
+                        });
+                    </script>
+                </div>
                 </div>
             </div>
-        </div><!-- END SIDEBAR -->
-        <div class="grid_9">
-            <dl class="group"><!-- CATEGORY FILTER -->
-                <dd>
-                    <ul class="filter group">
-                        <cat type="n" pid="$_GET[cid]">
-                            <li class="current all">
-                                <a href='{:U("news/index",array("cid"=>$cid))}'>{$name}</a>
-                            </li>
-                        </cat>
-                    </ul>
-                </dd>
-            </dl><!-- END CATEGORY FILTER -->
-        </div>
-        <div class="grid_9">
-            <h4 class="uppercase">{$info.title}</h4>
-            <div class="post-meta">
-                <p>{:date('Y-m-d',$info['published'])}
-                    <a href="javascript:;" class="icon_meta purple">{$auther}</a>
-                    <a href="javascript:;" class="icon_meta purple">{$Think.lang.T_VIEWTIMES}:{$info['click']}</a></p>
-            </div>
-
-            <div class="post-block"><!-- POST-BLOCK -->
-                <if condition="$info['image_id'] neq 0">
-                <a href="index.html"><img src="{:get_default_img($info['image_id'])}" alt="" width="700" height="280" border="0" /></a>
-
-                </if>
-                <p class="bottom">
-                {$info['content']}
-                </p>
-            </div><!-- END POST-BLOCK -->
-
-
         </div>
     </div>
-</div><!-- END MAIN -->
+    <!--content结束-->
 <include file="Base:footer" />

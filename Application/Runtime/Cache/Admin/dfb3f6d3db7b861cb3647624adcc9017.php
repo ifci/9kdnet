@@ -4,19 +4,19 @@
     <meta charset="utf-8">
     <title>添加编辑图片-网站设置-<?php echo ($site["SITE_INFO"]["name"]); ?></title>
     <?php $addCss=""; $addJs=""; $currentNav ='网站设置 > 添加编辑图片'; ?>
-    <link rel="stylesheet" type="text/css" href="/9kdnet/Public/Min/?f=/9kdnet/Public/Admin/Css/base.css|/9kdnet/Public/Admin/Css/layout.css|/9kdnet/Public/Js/asyncbox/skins/default.css<?php echo ($addCss); ?>" />
-<script type="text/javascript" src="/9kdnet/Public/Min/?f=/9kdnet/Public/Js/jquery-1.9.0.min.js|/9kdnet/Public/Js/jquery.lazyload.js|/9kdnet/Public/Js/functions.js|/9kdnet/Public/Admin/Js/base.js|/9kdnet/Public/Js/jquery.form.js|/9kdnet/Public/Js/asyncbox/asyncbox.js<?php echo ($addJs); ?>"></script>
+    <link rel="stylesheet" type="text/css" href="/9kd/Public/Min/?f=/9kd/Public/Admin/Css/base.css|/9kd/Public/Admin/Css/layout.css|/9kd/Public/Js/asyncbox/skins/default.css<?php echo ($addCss); ?>" />
+<script type="text/javascript" src="/9kd/Public/Min/?f=/9kd/Public/Js/jquery-1.9.0.min.js|/9kd/Public/Js/jquery.lazyload.js|/9kd/Public/Js/functions.js|/9kd/Public/Admin/Js/base.js|/9kd/Public/Js/jquery.form.js|/9kd/Public/Js/asyncbox/asyncbox.js<?php echo ($addJs); ?>"></script>
 </head>
 <body>
 <div class="wrap"> <div id="Top">
-    <div class="logo"><a target="_blank" href="<?php echo ($site["WEB_ROOT"]); ?>"><img src="/9kdnet/Public/Admin/Img/logo.png" /></a></div>
+    <div class="logo"><a target="_blank" href="<?php echo ($site["WEB_ROOT"]); ?>"><img src="/9kd/Public/Admin/Img/logo.png" /></a></div>
     <div class="help"><a href="http://www.conist.com/bbs" target="_blank">使用帮助</a><span><a href="http://www.conist.com" target="_blank">关于</a></span></div>
     <div class="menu">
         <ul> <?php echo ($menu); ?> </ul>
     </div>
 </div>
 <div id="Tags">
-    <div class="userPhoto"><img src="/9kdnet/Public/Admin/Img/userPhoto.jpg" /> </div>
+    <div class="userPhoto"><img src="/9kd/Public/Admin/Img/userPhoto.jpg" /> </div>
     <div class="navArea">
         <div class="userInfo"><div><a href="<?php echo U('Webinfo/index');?>" class="sysSet"><span>&nbsp;</span>系统设置</a> <a href="<?php echo U("Public/loginOut");?>" class="loginOut"><span>&nbsp;</span>退出系统</a></div>欢迎您，<?php echo ($my_info["email"]); ?></div>
         <div class="nav"><font id="today"><?php echo date("Y-m-d H:i:s"); ?></font>您的位置：<?php echo ($currentNav); ?></div>
@@ -58,13 +58,7 @@
                             <td><select name="info[position]" style="width: 140px;">
                                 <option value="all" <?php if($info['position'] == 'all'): ?>selected<?php endif; ?>>全局-除首页</option>
                                 <option value="index" <?php if($info['position'] == 'index'): ?>selected<?php endif; ?>>首页</option>
-
-                                <option value="wap" <?php if($info['position'] == 'wap'): ?>selected<?php endif; ?>>手机310*190</option>
-
-                                <option value="news" <?php if($info['position'] == 'news'): ?>selected<?php endif; ?>>新闻页</option>
-                                <option value="product" <?php if($info['position'] == 'product'): ?>selected<?php endif; ?>>产品页</option>
-                                <option value="message" <?php if($info['position'] == 'message'): ?>selected<?php endif; ?>>留言板页</option>
-                                <?php if(is_array($pagelist)): $i = 0; $__LIST__ = $pagelist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["unique_id"]); ?>" <?php if($info['position'] == $vo['unique_id']): ?>selected<?php endif; ?>><?php echo ($vo["fullname"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                <option value="bottom" <?php if($info['position'] == 'bottom'): ?>selected<?php endif; ?>>首页-底部</option>
                             </select></td>
                         </tr>
                         <tr id="hidetr">
@@ -83,7 +77,7 @@
                         <?php if($info['ad_img']){ ?>
                         <tr>
                             <th>图片显示：</th>
-                            <td><a href="/9kdnet/Uploads/picture/<?php echo ($info["ad_img"]); ?>" target="_blank"><img src="/9kdnet/Uploads/picture/<?php echo ($info["ad_img"]); ?>" border="0" height="40" width="200"></a></td>
+                            <td><a href="/9kd/Uploads/picture/<?php echo ($info["ad_img"]); ?>" target="_blank"><img src="/9kd/Uploads/picture/<?php echo ($info["ad_img"]); ?>" border="0" height="40" width="200"></a></td>
                         </tr>
                         <?php } ?>
 

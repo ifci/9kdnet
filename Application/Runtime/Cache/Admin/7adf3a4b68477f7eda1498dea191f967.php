@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>登录-<?php echo ($site["SITE_INFO"]["name"]); ?></title>
-        <link rel="stylesheet" type="text/css" href="/9kdnet/Public/Min/?f=/9kdnet/Public/Admin/Css/base.css|/9kdnet/Public/Js/asyncbox/skins/default.css" />
-        <script type="text/javascript" src="/9kdnet/Public/Min/?f=/9kdnet/Public/Js/jquery-1.9.0.min.js|/9kdnet/Public/Js/functions.js|/9kdnet/Public/Js/jquery.form.js|/9kdnet/Public/Js/asyncbox/asyncbox.js"></script>
+        <link rel="stylesheet" type="text/css" href="/9kd/Public/Min/?f=/9kd/Public/Admin/Css/base.css|/9kd/Public/Js/asyncbox/skins/default.css" />
+        <script type="text/javascript" src="/9kd/Public/Min/?f=/9kd/Public/Js/jquery-1.9.0.min.js|/9kd/Public/Js/functions.js|/9kd/Public/Js/jquery.form.js|/9kd/Public/Js/asyncbox/asyncbox.js"></script>
     </head>
 <body class="loginWeb">
     <div class="loginBox">
         <div class="innerBox">
-            <div class="logo"> <img src="/9kdnet/Public/Admin/Img/logo.png" /></div>
+            <div class="logo"> <img src="/9kd/Public/Admin/Img/logo.png" /></div>
             <form id="form1" action="" method="post">
                 <div class="loginInfo">
                     <ul>

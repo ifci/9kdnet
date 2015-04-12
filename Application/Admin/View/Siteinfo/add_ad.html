@@ -38,15 +38,7 @@
                             <td><select name="info[position]" style="width: 140px;">
                                 <option value="all" <if condition="$info['position'] eq 'all'">selected</if>>全局-除首页</option>
                                 <option value="index" <if condition="$info['position'] eq 'index'">selected</if>>首页</option>
-
-                                <option value="wap" <if condition="$info['position'] eq 'wap'">selected</if>>手机310*190</option>
-
-                                <option value="news" <if condition="$info['position'] eq 'news'">selected</if>>新闻页</option>
-                                <option value="product" <if condition="$info['position'] eq 'product'">selected</if>>产品页</option>
-                                <option value="message" <if condition="$info['position'] eq 'message'">selected</if>>留言板页</option>
-                                <volist name="pagelist" id="vo">
-                                    <option value="{$vo.unique_id}" <if condition="$info['position'] eq $vo['unique_id']">selected</if>>{$vo.fullname}</option>
-                                </volist>
+                                <option value="bottom" <if condition="$info['position'] eq 'bottom'">selected</if>>首页-底部</option>
                             </select></td>
                         </tr>
                         <tr id="hidetr">

@@ -11,6 +11,7 @@ class BaseController extends Controller{
 
     public function _initialize(){
         $this->assign("site", C('SITE_INFO'));
+        $this->assign("area", M('company')->select());
         if(I('get.'.C('VAR_LANGUAGE'))){
             delDirAndFile(WEB_CACHE_PATH . "Cache/Home/");
         }
@@ -54,11 +55,18 @@ class BaseController extends Controller{
     }
 
     public function verify_code(){
+        ob_end_clean();
         $Verify = new \Think\Verify();
         $Verify->fontSize = 17;
         $Verify->length   = 4;
         $Verify->codeSet = '0123456789';
         $Verify->entry();
+    }
+
+    public function inside(){
+        //面包屑导航
+        $action = M('Nav') -> where('nav_name='.$webtitle) -> getField('action');
+        $this -> assign('b_url', $action);
     }
 
 

@@ -4,20 +4,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>留言管理-<?php echo ($site["SITE_INFO"]["name"]); ?></title>
     <?php $addCss=""; $addJs=""; $currentNav ='留言管理 > 留言列表'; ?>
-    <link rel="stylesheet" type="text/css" href="/9kdnet/Public/Min/?f=/9kdnet/Public/Admin/Css/base.css|/9kdnet/Public/Admin/Css/layout.css|/9kdnet/Public/Js/asyncbox/skins/default.css<?php echo ($addCss); ?>" />
-<script type="text/javascript" src="/9kdnet/Public/Min/?f=/9kdnet/Public/Js/jquery-1.9.0.min.js|/9kdnet/Public/Js/jquery.lazyload.js|/9kdnet/Public/Js/functions.js|/9kdnet/Public/Admin/Js/base.js|/9kdnet/Public/Js/jquery.form.js|/9kdnet/Public/Js/asyncbox/asyncbox.js<?php echo ($addJs); ?>"></script>
+    <link rel="stylesheet" type="text/css" href="/9kd/Public/Min/?f=/9kd/Public/Admin/Css/base.css|/9kd/Public/Admin/Css/layout.css|/9kd/Public/Js/asyncbox/skins/default.css<?php echo ($addCss); ?>" />
+<script type="text/javascript" src="/9kd/Public/Min/?f=/9kd/Public/Js/jquery-1.9.0.min.js|/9kd/Public/Js/jquery.lazyload.js|/9kd/Public/Js/functions.js|/9kd/Public/Admin/Js/base.js|/9kd/Public/Js/jquery.form.js|/9kd/Public/Js/asyncbox/asyncbox.js<?php echo ($addJs); ?>"></script>
 </head>
 <body>
 <div class="wrap">
     <div id="Top">
-    <div class="logo"><a target="_blank" href="<?php echo ($site["WEB_ROOT"]); ?>"><img src="/9kdnet/Public/Admin/Img/logo.png" /></a></div>
+    <div class="logo"><a target="_blank" href="<?php echo ($site["WEB_ROOT"]); ?>"><img src="/9kd/Public/Admin/Img/logo.png" /></a></div>
     <div class="help"><a href="http://www.conist.com/bbs" target="_blank">使用帮助</a><span><a href="http://www.conist.com" target="_blank">关于</a></span></div>
     <div class="menu">
         <ul> <?php echo ($menu); ?> </ul>
     </div>
 </div>
 <div id="Tags">
-    <div class="userPhoto"><img src="/9kdnet/Public/Admin/Img/userPhoto.jpg" /> </div>
+    <div class="userPhoto"><img src="/9kd/Public/Admin/Img/userPhoto.jpg" /> </div>
     <div class="navArea">
         <div class="userInfo"><div><a href="<?php echo U('Webinfo/index');?>" class="sysSet"><span>&nbsp;</span>系统设置</a> <a href="<?php echo U("Public/loginOut");?>" class="loginOut"><span>&nbsp;</span>退出系统</a></div>欢迎您，<?php echo ($my_info["email"]); ?></div>
         <div class="nav"><font id="today"><?php echo date("Y-m-d H:i:s"); ?></font>您的位置：<?php echo ($currentNav); ?></div>
@@ -44,7 +44,7 @@
                 <tr>
                     <td>ID</td>
                     <td>姓名</td>
-                    <td>邮箱</td>
+                    <td>电话</td>
                     <td>留言时间</td>
                     <td width="300">留言信息</td>
                     <td width="150">审核/删除</td>
@@ -53,10 +53,10 @@
                 <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr align="center" id="<?php echo ($vo["id"]); ?>">
                         <td align="left"><?php echo ($vo["id"]); ?></td>
                         <td><?php echo ($vo["username"]); ?></td>
-                        <td><?php echo ($vo["email"]); ?><br /><?php echo ($vo["moblie"]); ?></td>
+                        <td><?php echo ($vo["moblie"]); ?></td>
                         <td><?php echo (date("Y-m-d H:i:s",$vo["addtime"])); ?></td>
                         <td><?php echo ($vo["content"]); ?></td>
-                        <td><a title="审核状态" href="javascript:void(0);" onclick="changeStatus(<?php echo ($vo["id"]); ?>,this)"><img src="/9kdnet/Public/Img/action_<?php echo ($vo["display"]); ?>.png" border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a link="<?php echo U('Siteinfo/delmessage/',array('id'=>$vo['id']));?>" href="javascript:void(0)" name="<?php echo ($vo["id"]); ?>" class="del"><img src="/9kdnet/Public/Img/action_remove.png" border="0"></a> </td>
+                        <td><a title="审核状态" href="javascript:void(0);" onclick="changeStatus(<?php echo ($vo["id"]); ?>,this)"><img src="/9kd/Public/Img/action_<?php echo ($vo["display"]); ?>.png" border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a link="<?php echo U('Siteinfo/delmessage/',array('id'=>$vo['id']));?>" href="javascript:void(0)" name="<?php echo ($vo["id"]); ?>" class="del"><img src="/9kd/Public/Img/action_remove.png" border="0"></a> </td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                 <tr><td colspan="7" align="right"><?php echo ($page); ?></td></td></tr>
             </table>

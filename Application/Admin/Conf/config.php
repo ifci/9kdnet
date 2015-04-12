@@ -3,13 +3,15 @@ $DB_PREFIX = C('DB_PREFIX');
 return array(
     'admin_big_menu' => array(
         'Index' => '首页',
-        'Member' => '用户管理',
+        // 'Member' => '用户管理',
         'News' => '资讯管理',
         'Product'=>'产品管理',
         'Siteinfo'=>'网站功能',
-        'Models'=>'模型管理',
+        'Honor'=>'公司荣誉',
+        'Video'=>'视频管理',
+        /*'Models'=>'模型管理',
         'SysData' => '数据管理',
-        'Access' => '权限管理',
+        'Access' => '权限管理',*/
     ),
     'admin_sub_menu' => array(
         'Common' => array(
@@ -55,6 +57,12 @@ return array(
             'link_index'=>'友情链接',
             'message'=>'留言信息'
         ),
+        'Honor' => array(
+            'index' => '公司荣誉',
+        ),
+        'Video' => array(
+            'index' => '课程试听',
+        ),
         'SysData' => array(
             'index' => '数据库备份',
             'restore' => '数据库导入',
@@ -90,10 +98,10 @@ return array(
     'RBAC_USER_TABLE' => $DB_PREFIX . 'role_user',
     'RBAC_ACCESS_TABLE' => $DB_PREFIX . 'access',
     'RBAC_NODE_TABLE' => $DB_PREFIX . 'node',
-    
+
     'URL_HTML_SUFFIX'       => C('TOKEN.URL_HTML_SUFFIX'),  // URL伪静态后缀设置
     'URL_MODEL' =>C('TOKEN.false_static'),// URL伪静态设置/开启，关闭
-    
+
     'LOAD_EXT_CONFIG'=>'model_menu',
     // 系统保留表明
     'SYSTEM_TBL_NAME' => 'model,models,filed,fileds,admin,admins',

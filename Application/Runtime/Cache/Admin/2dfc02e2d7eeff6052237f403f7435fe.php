@@ -4,20 +4,20 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>添加、编辑新闻-后台管理-<?php echo ($site["SITE_INFO"]["name"]); ?></title>
         <?php $addCss=""; $addJs=""; $currentNav ='资讯管理 > 添加编辑新闻'; ?>
-        <link rel="stylesheet" type="text/css" href="/9kdnet/Public/Min/?f=/9kdnet/Public/Admin/Css/base.css|/9kdnet/Public/Admin/Css/layout.css|/9kdnet/Public/Js/asyncbox/skins/default.css<?php echo ($addCss); ?>" />
-<script type="text/javascript" src="/9kdnet/Public/Min/?f=/9kdnet/Public/Js/jquery-1.9.0.min.js|/9kdnet/Public/Js/jquery.lazyload.js|/9kdnet/Public/Js/functions.js|/9kdnet/Public/Admin/Js/base.js|/9kdnet/Public/Js/jquery.form.js|/9kdnet/Public/Js/asyncbox/asyncbox.js<?php echo ($addJs); ?>"></script>
+        <link rel="stylesheet" type="text/css" href="/9kd/Public/Min/?f=/9kd/Public/Admin/Css/base.css|/9kd/Public/Admin/Css/layout.css|/9kd/Public/Js/asyncbox/skins/default.css<?php echo ($addCss); ?>" />
+<script type="text/javascript" src="/9kd/Public/Min/?f=/9kd/Public/Js/jquery-1.9.0.min.js|/9kd/Public/Js/jquery.lazyload.js|/9kd/Public/Js/functions.js|/9kd/Public/Admin/Js/base.js|/9kd/Public/Js/jquery.form.js|/9kd/Public/Js/asyncbox/asyncbox.js<?php echo ($addJs); ?>"></script>
     </head>
     <body>
         <div class="wrap">
             <div id="Top">
-    <div class="logo"><a target="_blank" href="<?php echo ($site["WEB_ROOT"]); ?>"><img src="/9kdnet/Public/Admin/Img/logo.png" /></a></div>
+    <div class="logo"><a target="_blank" href="<?php echo ($site["WEB_ROOT"]); ?>"><img src="/9kd/Public/Admin/Img/logo.png" /></a></div>
     <div class="help"><a href="http://www.conist.com/bbs" target="_blank">使用帮助</a><span><a href="http://www.conist.com" target="_blank">关于</a></span></div>
     <div class="menu">
         <ul> <?php echo ($menu); ?> </ul>
     </div>
 </div>
 <div id="Tags">
-    <div class="userPhoto"><img src="/9kdnet/Public/Admin/Img/userPhoto.jpg" /> </div>
+    <div class="userPhoto"><img src="/9kd/Public/Admin/Img/userPhoto.jpg" /> </div>
     <div class="navArea">
         <div class="userInfo"><div><a href="<?php echo U('Webinfo/index');?>" class="sysSet"><span>&nbsp;</span>系统设置</a> <a href="<?php echo U("Public/loginOut");?>" class="loginOut"><span>&nbsp;</span>退出系统</a></div>欢迎您，<?php echo ($my_info["email"]); ?></div>
         <div class="nav"><font id="today"><?php echo date("Y-m-d H:i:s"); ?></font>您的位置：<?php echo ($currentNav); ?></div>
@@ -120,17 +120,17 @@
     });
 
 </script>
-        <script type="text/javascript" src="/9kdnet/Public/kindeditor/kindeditor.js"></script><script type="text/javascript" src="/9kdnet/Public/kindeditor/lang/zh_CN.js"></script>
+        <script type="text/javascript" src="/9kd/Public/kindeditor/kindeditor.js"></script><script type="text/javascript" src="/9kd/Public/kindeditor/lang/zh_CN.js"></script>
         <script type="text/javascript">
             $(function(){var  content ;
                 KindEditor.ready(function(K) {
                     content = K.create('#content',{
                         allowFileManager : true,
-                        uploadJson:'/9kdnet/Public/kindeditor/php/upload_json.php?dirname=news'
+                        uploadJson:'/9kd/Public/kindeditor/php/upload_json.php?dirname=news'
                     });
                 });
                 $("#checkNewsTitle").click(function(){
-                    $.getJSON("/9kdnet/index.php/conist/News/checkNewsTitle", { title:$("#title").val(),id:"<?php echo ($info["id"]); ?>"}, function(json){
+                    $.getJSON("/9kd/jkd/News/checkNewsTitle", { title:$("#title").val(),id:"<?php echo ($info["id"]); ?>"}, function(json){
                         $("#checkNewsTitle").css("color",json.status==1?"#0f0":"#f00").html(json.info);
                     });
                 });
@@ -145,7 +145,7 @@
             KindEditor.ready(function(K) {
                 var editor = K.editor({
                     allowFileManager : true,
-                    uploadJson:'/9kdnet/Public/kindeditor/php/upload_json.php?dirname=news'
+                    uploadJson:'/9kd/Public/kindeditor/php/upload_json.php?dirname=news'
                 });
                 K('#image1').click(function() {
                     editor.loadPlugin('image', function() {
