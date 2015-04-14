@@ -33,13 +33,54 @@ class VideoModel extends Model {
         if(empty($data['title'])){
             return array('status' => 0, 'info' => "请输入标题！",'url'=>__SELF__);
         }
-        if(I('post.image')){
+        /*if(I('post.image')){
         $image = M("images");
         $img_data['savepath']=I('post.image');
         $img_data['savename']=end(explode('/',$img_data['savepath']));
         $img_data['create_time']=time();
         $img_data['catname']='video';
         $data['image_id']=$image->add($img_data);
+        }*/
+
+        $image=I('post.image_1');
+        if($data['id']){
+            if($image){
+                if(is_array($image)){
+                    $M_image = M("images");
+                    $image_id=array();
+                    foreach($image as $k=>$v){
+                        $img_data['savepath']=$v;
+                        $img_data['savename']=end(explode('/',$v));
+                        $img_data['create_time']=time();
+                        $img_data['catname']='news';
+                        if($v)
+                            $image_id[$k]=$M_image->add($img_data);
+                    }
+                    $data['image_id']=implode(',',$image_id);
+                }
+            }
+            if($m_page->where('id='.$data['id'])->save($data)){
+                echo json_encode(array("status" => 1, "info" => "修改单页成功",'url'=>U(CONTROLLER_NAME.'/index')));
+            }
+        }else{
+            if($image){
+                if(is_array($image)){
+                    $M_image = M("images");
+                    $image_id=array();
+                    foreach($image as $k=>$v){
+                        $img_data['savepath']=$v;
+                        $img_data['savename']=end(explode('/',$v));
+                        $img_data['create_time']=time();
+                        $img_data['catname']='news';
+                        if($v)
+                            $image_id[$k]=$M_image->add($img_data);
+                    }
+                    $data['image_id']=implode(',',$image_id);
+                }
+            }
+            if($m_page->add($data)){
+                echo json_encode(array("status" => 1, "info" => "添加单页成功",'url'=>U(CONTROLLER_NAME.'/index')));
+            }
         }
 
         /*if (empty($data['summary'])) {
@@ -61,7 +102,7 @@ class VideoModel extends Model {
         }
         if(I('post.image_id')){
             $image = M("images");
-            $img_data['savepath']=I('post.image');
+            $img_data['savepath']=I('post.image_1');
             $img_data['savename']=end(explode('/',$img_data['savepath']));
             $img_data['create_time']=time();
             $img_data['catname']='video';

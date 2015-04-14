@@ -5,7 +5,7 @@ return array(
         'Index' => '首页',
         // 'Member' => '用户管理',
         'News' => '资讯管理',
-        'Product'=>'产品管理',
+        // 'Product'=>'产品管理',
         'Siteinfo'=>'网站功能',
         'Honor'=>'公司荣誉',
         'Video'=>'视频管理',

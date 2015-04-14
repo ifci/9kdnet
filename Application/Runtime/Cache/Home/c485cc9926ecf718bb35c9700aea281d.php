@@ -243,7 +243,7 @@ $(window).load(function() {
         <a href="http://www.9koudai.cn">手工网站建设业务</a>
         <strong>九口袋--落地操作赚钱首选</strong>
          <br />
-        Copyright © 2012-2015 www.9koudai.net All Rights Reserved 上海九口袋实业有限公司 版权所有 <?php echo ($site["icp"]); ?>      </div>
+        Copyright © 2012-2015 www.9koudai.org.cn All Rights Reserved <?php echo ($site["name"]); ?> 版权所有 <?php echo ($site["icp"]); ?>      </div>
     </div>
     <!--footer结束-->
 

@@ -5,8 +5,8 @@
 <title><?php echo ($webtitle); ?>-<?php echo ($site["name"]); ?></title>
 <meta name="keywords" content="<?php echo ($site["keyword"]); ?>,<?php echo ($info['keywords']); ?>" />
 <meta name="description" content="<?php echo ($site["description"]); ?>,<?php echo ($info['description']); ?>" />
-<link rel="stylesheet" type="text/css" href="/9kdnet/Public/Min/?f=/9kdnet/Public/Home/css/base.css|/9kdnet/Public/Home/css/index.css|/9kdnet/Public/Home/css/main.css" />
-<script type="text/javascript" src="/9kdnet/Public/Min/?f=/9kdnet/Public/Home/js/jquery.js|/9kdnet/Public/Home/js/jquery.flexslider.min.js|/9kdnet/Public/Home/js/jquery.SuperSlide.2.1.1.js|/9kdnet/Public/Home/js/jquery.rotate.min.js|/9kdnet/Public/Home/js/index.js"></script>
+<link rel="stylesheet" type="text/css" href="/9kd/Public/Min/?f=/9kd/Public/Home/css/base.css|/9kd/Public/Home/css/index.css|/9kd/Public/Home/css/main.css" />
+<script type="text/javascript" src="/9kd/Public/Min/?f=/9kd/Public/Home/js/jquery.js|/9kd/Public/Home/js/jquery.flexslider.min.js|/9kd/Public/Home/js/jquery.SuperSlide.2.1.1.js|/9kd/Public/Home/js/jquery.rotate.min.js|/9kd/Public/Home/js/index.js"></script>
 <script>
 $(window).load(function() {
     $('.flexslider').flexslider();      //引用幻灯片
@@ -20,7 +20,7 @@ $(window).load(function() {
         <!--logo开始-->
         <div class="logo fl">
             <div class="logo_t clearfix pr">
-                <a href="/9kdnet/"><img src="/9kdnet/Public/Home/images/logo.png" alt="" /></a>
+                <a href="/9kd/"><img src="/9kd/Public/Home/images/logo.png" alt="" /></a>
                <!--  <a href="#" title=""></a> -->
                 <ul class="city_ul pa">
                 <?php if(is_array($area)): $i = 0; $__LIST__ = $area;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li <?php echo ($i == 1 ? 'class="city_active"' :''); ?>><a href="<?php echo ($vo["c_url"]); ?>" title=""><?php echo ($i==1 ? '[' : ''); echo ($vo["area"]); echo ($i==1 ? ']' : ''); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -45,7 +45,7 @@ $(window).load(function() {
             <!--导航开始-->
             <div class="nav">
                 <ul class="clearfix">
-                    <li class="<?php echo CONTROLLER_NAME == 'Index'?'nav_on':'';?>"><a href="/9kdnet/">首页</a></li>
+                    <li class="<?php echo CONTROLLER_NAME == 'Index'?'nav_on':'';?>"><a href="/9kd/">首页</a></li>
                     <?php $_m_nav=M("nav");$__list__=$_m_nav->where("lang='zh-cn'  AND type='top' AND parent_id=0")->order('sort DESC')->select();foreach($__list__ as $_k1=>$_v1):$cid=$_v1['id'];$child=$_m_nav->where('parent_id='.$cid)->order('sort DESC')->select();extract($_v1);?><li <?php if($nav_name == $webtitle): ?>class='nav_on'<?php endif; ?>">
                         <a href="<?php if($action == null): echo ($link); else: echo U($action); endif; ?>" <?php if($target == 1): ?>target="_blank"<?php endif; ?>><?php echo ($nav_name); ?></a>
                         <?php if(!empty($child)): ?><ul class="nav2">
@@ -70,7 +70,7 @@ $(window).load(function() {
     <div class="banner">
         <div class="flexslider">
             <ul class="slides">
-            <?php if(is_array($ad_info)): $i = 0; $__LIST__ = $ad_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li style="background:url(/9kdnet/Uploads/picture/<?php echo ($vo["ad_img"]); ?>) top center;"><a href="#" target="_blank" title="<?php echo ($vo["ad_name"]); ?>"></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+            <?php if(is_array($ad_info)): $i = 0; $__LIST__ = $ad_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li style="background:url(/9kd/Uploads/picture/<?php echo ($vo["ad_img"]); ?>) top center;"><a href="#" target="_blank" title="<?php echo ($vo["ad_name"]); ?>"></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>
         </div>
     </div>
@@ -396,7 +396,7 @@ $(window).load(function() {
                 <div class="cont_ty20"></div>
                 <div class="fl cont_ty1">
                     <div class="cont_ty37 fl" id="pic_t">
-                        <img src="/9kdnet/Public/Home/images/pic_11.png" alt="" />
+                        <img src="/9kd/Public/Home/images/pic_11.png" alt="" />
                     </div>
                     <div class="cont_ty38 fl">
                         <div class="cont_ty39" id="teacher">
@@ -520,7 +520,7 @@ $(window).load(function() {
         </div>
         <ul class="cont_ty44 clearfix">
             <?php if(is_array($hzhb)): $i = 0; $__LIST__ = $hzhb;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-                <img src="/9kdnet/Uploads/picture/<?php echo ($vo["ad_img"]); ?>" alt="<?php echo ($vo["ad_name"]); ?>" title="<?php echo ($vo["ad_name"]); ?>" />
+                <img src="/9kd/Uploads/picture/<?php echo ($vo["ad_img"]); ?>" alt="<?php echo ($vo["ad_name"]); ?>" title="<?php echo ($vo["ad_name"]); ?>" />
             </li><?php endforeach; endif; else: echo "" ;endif; ?>
         </ul>
     </div>
@@ -541,7 +541,7 @@ $(window).load(function() {
         <div class="cont_h10">
             <div class="center clearfix">
                 <ul class="cont_ty45 clearfix">
-                    <li class="cont_ty46"  ><a href="/9kdnet/" title='首页'  ><span>首页</span></a></li>
+                    <li class="cont_ty46"  ><a href="/9kd/" title='首页'  ><span>首页</span></a></li>
                     <?php $_m_nav=M("nav");$__list__=$_m_nav->where("lang='zh-cn'  AND type='top' AND parent_id=0")->order('sort DESC')->select();foreach($__list__ as $_k1=>$_v1):$cid=$_v1['id'];$child=$_m_nav->where('parent_id='.$cid)->order('sort DESC')->select();extract($_v1);?><li>
                         <a href="<?php echo ($link); ?>" title="<?php echo ($nav_name); ?>"><span><?php echo ($nav_name); ?></span></a>
                     </li><?php endforeach; ?>
@@ -553,7 +553,7 @@ $(window).load(function() {
                     九口袋全国免费服务热线：<br /><?php echo ($site["tel"]); ?>
                 </div>
                 <div class="cont_ty49 tac fl">
-                    <img src="/9kdnet/Public/Home/images/qr.png" alt="" />
+                    <img src="/9kd/Public/Home/images/qr.png" alt="" />
                     <i>九口袋网络官方微信</i>
                 </div>
             </div>

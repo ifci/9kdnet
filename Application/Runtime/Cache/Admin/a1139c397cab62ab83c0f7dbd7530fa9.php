@@ -38,7 +38,7 @@
                 <div id="Right">
                     <div class="Item hr">
                         <div class="current" style="max-width: 100px; float: left;">视频列表</div>
-                		<div style="width: 100px;float: right;"><button type="button" class="btn" onclick="window.location.href='<?php echo U(CONTROLLER_NAME.'/add');?>'">添加</button></div>
+                		<div style="width: 100px;float: right;"><button type="button" class="btn" onclick="window.location.href='<?php echo U(CONTROLLER_NAME.'/add_page');?>'">添加</button></div>
                     </div>
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
                         <thead>
@@ -57,7 +57,7 @@
                                 <td><?php echo ($vo["content"]); ?></td>
                                 <td><?php echo (date("Y-m-d H:i:s",$vo["published"])); ?></td>
                                 <td><a href="javascript:void(0);" onclick="changeStatus(<?php echo ($vo["id"]); ?>,this)"><?php echo ($vo["status"]); ?></a></td>
-                                <td>[ <a href="/9kd/jkd/Video/edit?id=<?php echo ($vo["id"]); ?>">编辑 </a> ] [ <a link="<?php echo U('Video/del/',array('id'=>$vo['id']));?>" href="javascript:void(0)" name="<?php echo ($vo["title"]); ?>" class="del">删除 </a> ]</td>
+                                <td>[ <a href="/9kd/jkd/Video/add_page?id=<?php echo ($vo["id"]); ?>">编辑 </a> ] [ <a link="<?php echo U('Video/del/',array('id'=>$vo['id']));?>" href="javascript:void(0)" name="<?php echo ($vo["title"]); ?>" class="del">删除 </a> ]</td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         <tr><td colspan="6" align="right"><?php echo ($page); ?></td></tr>
                     </table>

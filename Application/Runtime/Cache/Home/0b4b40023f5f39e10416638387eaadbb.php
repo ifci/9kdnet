@@ -78,7 +78,7 @@ $(window).load(function() {
         	>
         	<a href="<?php echo U($b_url);?>" title=""><?php echo ($webtitle); ?></a>
         	<?php if($details == 1): ?>>
-        	<a href="/9kd/Lesson/index.html" title=""><?php echo ($info['title']); ?></a><?php endif; ?>
+        	<a href="/9kdnet/Lesson/index.html" title=""><?php echo ($info['title']); ?></a><?php endif; ?>
         </div>
     </div>
 </div>

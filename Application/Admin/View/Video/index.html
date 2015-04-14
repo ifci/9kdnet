@@ -18,7 +18,7 @@
                 <div id="Right">
                     <div class="Item hr">
                         <div class="current" style="max-width: 100px; float: left;">视频列表</div>
-                		<div style="width: 100px;float: right;"><button type="button" class="btn" onclick="window.location.href='{:U(CONTROLLER_NAME.'/add')}'">添加</button></div>
+                		<div style="width: 100px;float: right;"><button type="button" class="btn" onclick="window.location.href='{:U(CONTROLLER_NAME.'/add_page')}'">添加</button></div>
                     </div>
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
                         <thead>
@@ -38,7 +38,7 @@
                                 <td>{$vo.content}</td>
                                 <td>{$vo.published|date="Y-m-d H:i:s",###}</td>
                                 <td><a href="javascript:void(0);" onclick="changeStatus({$vo.id},this)">{$vo.status}</a></td>
-                                <td>[ <a href="__URL__/edit?id={$vo.id}">编辑 </a> ] [ <a link="{:U('Video/del/',array('id'=>$vo['id']))}" href="javascript:void(0)" name="{$vo.title}" class="del">删除 </a> ]</td>
+                                <td>[ <a href="__URL__/add_page?id={$vo.id}">编辑 </a> ] [ <a link="{:U('Video/del/',array('id'=>$vo['id']))}" href="javascript:void(0)" name="{$vo.title}" class="del">删除 </a> ]</td>
                             </tr>
                         </volist>
                         <tr><td colspan="6" align="right">{$page}</td></tr>
